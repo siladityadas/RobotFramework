@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.12.4 on darwin)" generated="2025-01-19T07:54:58.331633" rpa="false" schemaversion="5">
+<suite id="s1" name="RobotFramework" source="/Users/siladitya/PycharmProjects/RobotFramework">
+<suite id="s1-s1" name="TestCase" source="/Users/siladitya/PycharmProjects/RobotFramework/TestCase">
+<suite id="s1-s1-s1" name="Testcase1" source="/Users/siladitya/PycharmProjects/RobotFramework/TestCase/testcase1.robot">
+<test id="s1-s1-s1-t1" name="Launch Test URL" line="7">
+<status status="FAIL" start="2025-01-19T07:54:58.383917" elapsed="0.000204">Test cannot be empty.</status>
+</test>
+<doc>To check thrilophilla website is working fine</doc>
+<status status="FAIL" start="2025-01-19T07:54:58.342072" elapsed="0.042231"/>
+</suite>
+<status status="FAIL" start="2025-01-19T07:54:58.341713" elapsed="0.042798"/>
+</suite>
+<status status="FAIL" start="2025-01-19T07:54:58.332202" elapsed="0.052446"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="RobotFramework" id="s1" pass="0" fail="1" skip="0">RobotFramework</stat>
+<stat name="TestCase" id="s1-s1" pass="0" fail="1" skip="0">RobotFramework.TestCase</stat>
+<stat name="Testcase1" id="s1-s1-s1" pass="0" fail="1" skip="0">RobotFramework.TestCase.Testcase1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

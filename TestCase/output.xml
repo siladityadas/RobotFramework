@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.12.4 on darwin)" generated="2025-01-19T08:10:02.628078" rpa="false" schemaversion="5">
+<suite id="s1" name="Testcase1" source="/Users/siladitya/PycharmProjects/RobotFramework/TestCase/testcase1.robot">
+<test id="s1-t1" name="Check if page is valid" line="7">
+<kw name="Launch Test URL">
+<kw name="Create Webdriver" owner="SeleniumLibrary">
+<msg time="2025-01-19T08:10:02.701693" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<arg>Chrome</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<status status="PASS" start="2025-01-19T08:10:02.701631" elapsed="0.988646"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-01-19T08:10:03.690824" level="INFO">Opening url 'https://www.thrillophilia.com/'</msg>
+<arg>https://www.thrillophilia.com/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-01-19T08:10:03.690653" elapsed="3.804572"/>
+</kw>
+<status status="PASS" start="2025-01-19T08:10:02.701381" elapsed="4.793964"/>
+</kw>
+<status status="PASS" start="2025-01-19T08:10:02.701143" elapsed="4.794384"/>
+</test>
+<doc>To check thrilophilla website is working fine</doc>
+<status status="PASS" start="2025-01-19T08:10:02.628730" elapsed="4.867123"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Testcase1" id="s1" pass="1" fail="0" skip="0">Testcase1</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
