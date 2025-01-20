@@ -1,26 +1,376 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2 (Python 3.12.4 on darwin)" generated="2025-01-19T08:10:02.628078" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2 (Python 3.12.4 on darwin)" generated="2025-01-19T13:26:24.196313" rpa="false" schemaversion="5">
 <suite id="s1" name="Testcase1" source="/Users/siladitya/PycharmProjects/RobotFramework/TestCase/testcase1.robot">
 <test id="s1-t1" name="Check if page is valid" line="7">
 <kw name="Launch Test URL">
 <kw name="Create Webdriver" owner="SeleniumLibrary">
-<msg time="2025-01-19T08:10:02.701693" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<msg time="2025-01-19T13:26:24.242873" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
 <arg>Chrome</arg>
 <doc>Creates an instance of Selenium WebDriver.</doc>
-<status status="PASS" start="2025-01-19T08:10:02.701631" elapsed="0.988646"/>
+<status status="PASS" start="2025-01-19T13:26:24.242811" elapsed="0.599153"/>
 </kw>
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-01-19T08:10:03.690824" level="INFO">Opening url 'https://www.thrillophilia.com/'</msg>
+<msg time="2025-01-19T13:26:24.842381" level="INFO">Opening url 'https://www.thrillophilia.com/'</msg>
 <arg>https://www.thrillophilia.com/</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-01-19T08:10:03.690653" elapsed="3.804572"/>
+<status status="PASS" start="2025-01-19T13:26:24.842237" elapsed="2.301331"/>
 </kw>
-<status status="PASS" start="2025-01-19T08:10:02.701381" elapsed="4.793964"/>
+<status status="PASS" start="2025-01-19T13:26:24.242561" elapsed="2.901119"/>
 </kw>
-<status status="PASS" start="2025-01-19T08:10:02.701143" elapsed="4.794384"/>
+<kw name="AUT is visible">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>//div[@class ='StickyTabBar_tagLabel__SYuPT ']</arg>
+<arg>${10}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.144186" elapsed="0.013715"/>
+</kw>
+<kw name="Get WebElements" owner="SeleniumLibrary">
+<msg time="2025-01-19T13:26:27.163193" level="INFO">${Data} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.42")&gt;, &lt;selenium.webdriv...</msg>
+<var>${Data}</var>
+<arg>//div[@class ='StickyTabBar_tagLabel__SYuPT ']</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.158014" elapsed="0.005204"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-01-19T13:26:27.163408" level="INFO">[&lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.42")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.43")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.44")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.45")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.46")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.47")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.48")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.49")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.50")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.51")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.52")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.53")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.54")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.55")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.56")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.57")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.58")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.59")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.60")&gt;]</msg>
+<arg>${Data}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.163308" elapsed="0.000134"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-01-19T13:26:27.170847" level="INFO">${val} = Dubai</msg>
+<var>${val}</var>
+<arg>${itr}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.163619" elapsed="0.007256"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-01-19T13:26:27.171114" level="INFO">Dubai</msg>
+<arg>${val}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.170980" elapsed="0.000170"/>
+</kw>
+<var name="${itr}">&lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.42")&gt;</var>
+<status status="PASS" start="2025-01-19T13:26:27.163569" elapsed="0.007631"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-01-19T13:26:27.175550" level="INFO">${val} = Singapore</msg>
+<var>${val}</var>
+<arg>${itr}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.171393" elapsed="0.004175"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-01-19T13:26:27.175710" level="INFO">Singapore</msg>
+<arg>${val}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.175639" elapsed="0.000087"/>
+</kw>
+<var name="${itr}">&lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.43")&gt;</var>
+<status status="PASS" start="2025-01-19T13:26:27.171280" elapsed="0.004464"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-01-19T13:26:27.178235" level="INFO">${val} = North East India</msg>
+<var>${val}</var>
+<arg>${itr}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.175827" elapsed="0.002419"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-01-19T13:26:27.178334" level="INFO">North East India</msg>
+<arg>${val}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.178287" elapsed="0.000062"/>
+</kw>
+<var name="${itr}">&lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.44")&gt;</var>
+<status status="PASS" start="2025-01-19T13:26:27.175793" elapsed="0.002571"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-01-19T13:26:27.180830" level="INFO">${val} = Thailand</msg>
+<var>${val}</var>
+<arg>${itr}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.178485" elapsed="0.002361"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-01-19T13:26:27.180933" level="INFO">Thailand</msg>
+<arg>${val}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.180885" elapsed="0.000062"/>
+</kw>
+<var name="${itr}">&lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.45")&gt;</var>
+<status status="PASS" start="2025-01-19T13:26:27.178454" elapsed="0.002508"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-01-19T13:26:27.184011" level="INFO">${val} = Kashmir</msg>
+<var>${val}</var>
+<arg>${itr}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.181027" elapsed="0.003000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-01-19T13:26:27.184139" level="INFO">Kashmir</msg>
+<arg>${val}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.184083" elapsed="0.000072"/>
+</kw>
+<var name="${itr}">&lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.46")&gt;</var>
+<status status="PASS" start="2025-01-19T13:26:27.181000" elapsed="0.003172"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-01-19T13:26:27.186674" level="INFO">${val} = Switzerland</msg>
+<var>${val}</var>
+<arg>${itr}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.184249" elapsed="0.002439"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-01-19T13:26:27.186788" level="INFO">Switzerland</msg>
+<arg>${val}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.186737" elapsed="0.000068"/>
+</kw>
+<var name="${itr}">&lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.47")&gt;</var>
+<status status="PASS" start="2025-01-19T13:26:27.184216" elapsed="0.002605"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-01-19T13:26:27.190109" level="INFO">${val} = Bhutan</msg>
+<var>${val}</var>
+<arg>${itr}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.186895" elapsed="0.003233"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-01-19T13:26:27.190250" level="INFO">Bhutan</msg>
+<arg>${val}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.190191" elapsed="0.000074"/>
+</kw>
+<var name="${itr}">&lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.48")&gt;</var>
+<status status="PASS" start="2025-01-19T13:26:27.186864" elapsed="0.003416"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-01-19T13:26:27.192809" level="INFO">${val} = Japan</msg>
+<var>${val}</var>
+<arg>${itr}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.190353" elapsed="0.002467"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-01-19T13:26:27.192897" level="INFO">Japan</msg>
+<arg>${val}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.192857" elapsed="0.000054"/>
+</kw>
+<var name="${itr}">&lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.49")&gt;</var>
+<status status="PASS" start="2025-01-19T13:26:27.190323" elapsed="0.002602"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-01-19T13:26:27.195183" level="INFO">${val} = Abu Dhabi</msg>
+<var>${val}</var>
+<arg>${itr}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.192990" elapsed="0.002203"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-01-19T13:26:27.195263" level="INFO">Abu Dhabi</msg>
+<arg>${val}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.195226" elapsed="0.000049"/>
+</kw>
+<var name="${itr}">&lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.50")&gt;</var>
+<status status="PASS" start="2025-01-19T13:26:27.192963" elapsed="0.002325"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-01-19T13:26:27.197517" level="INFO">${val} = Norway</msg>
+<var>${val}</var>
+<arg>${itr}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.195346" elapsed="0.002181"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-01-19T13:26:27.197596" level="INFO">Norway</msg>
+<arg>${val}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.197560" elapsed="0.000048"/>
+</kw>
+<var name="${itr}">&lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.51")&gt;</var>
+<status status="PASS" start="2025-01-19T13:26:27.195321" elapsed="0.002300"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-01-19T13:26:27.199813" level="INFO">${val} = Kerala</msg>
+<var>${val}</var>
+<arg>${itr}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.197678" elapsed="0.002145"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-01-19T13:26:27.199893" level="INFO">Kerala</msg>
+<arg>${val}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.199858" elapsed="0.000047"/>
+</kw>
+<var name="${itr}">&lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.52")&gt;</var>
+<status status="PASS" start="2025-01-19T13:26:27.197653" elapsed="0.002265"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-01-19T13:26:27.206548" level="INFO">${val} = Bali</msg>
+<var>${val}</var>
+<arg>${itr}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.199974" elapsed="0.006594"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-01-19T13:26:27.206683" level="INFO">Bali</msg>
+<arg>${val}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.206632" elapsed="0.000064"/>
+</kw>
+<var name="${itr}">&lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.53")&gt;</var>
+<status status="PASS" start="2025-01-19T13:26:27.199949" elapsed="0.006761"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-01-19T13:26:27.209069" level="INFO">${val} = Rajasthan</msg>
+<var>${val}</var>
+<arg>${itr}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.206827" elapsed="0.002252"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-01-19T13:26:27.209153" level="INFO">Rajasthan</msg>
+<arg>${val}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.209114" elapsed="0.000051"/>
+</kw>
+<var name="${itr}">&lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.54")&gt;</var>
+<status status="PASS" start="2025-01-19T13:26:27.206754" elapsed="0.002425"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-01-19T13:26:27.211304" level="INFO">${val} = Vietnam</msg>
+<var>${val}</var>
+<arg>${itr}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.209237" elapsed="0.002076"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-01-19T13:26:27.211376" level="INFO">Vietnam</msg>
+<arg>${val}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.211344" elapsed="0.000045"/>
+</kw>
+<var name="${itr}">&lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.55")&gt;</var>
+<status status="PASS" start="2025-01-19T13:26:27.209212" elapsed="0.002189"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-01-19T13:26:27.213470" level="INFO">${val} = Ladakh</msg>
+<var>${val}</var>
+<arg>${itr}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.211454" elapsed="0.002028"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-01-19T13:26:27.213551" level="INFO">Ladakh</msg>
+<arg>${val}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.213518" elapsed="0.000045"/>
+</kw>
+<var name="${itr}">&lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.56")&gt;</var>
+<status status="PASS" start="2025-01-19T13:26:27.211431" elapsed="0.002144"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-01-19T13:26:27.215631" level="INFO">${val} = South Africa</msg>
+<var>${val}</var>
+<arg>${itr}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.213627" elapsed="0.002013"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-01-19T13:26:27.215703" level="INFO">South Africa</msg>
+<arg>${val}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.215670" elapsed="0.000044"/>
+</kw>
+<var name="${itr}">&lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.57")&gt;</var>
+<status status="PASS" start="2025-01-19T13:26:27.213604" elapsed="0.002122"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-01-19T13:26:27.217716" level="INFO">${val} = Spiti Valley</msg>
+<var>${val}</var>
+<arg>${itr}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.215777" elapsed="0.001948"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-01-19T13:26:27.217787" level="INFO">Spiti Valley</msg>
+<arg>${val}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.217755" elapsed="0.000044"/>
+</kw>
+<var name="${itr}">&lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.58")&gt;</var>
+<status status="PASS" start="2025-01-19T13:26:27.215755" elapsed="0.002056"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-01-19T13:26:27.219818" level="INFO">${val} = Turkey</msg>
+<var>${val}</var>
+<arg>${itr}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.217862" elapsed="0.001965"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-01-19T13:26:27.219888" level="INFO">Turkey</msg>
+<arg>${val}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.219856" elapsed="0.000043"/>
+</kw>
+<var name="${itr}">&lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.59")&gt;</var>
+<status status="PASS" start="2025-01-19T13:26:27.217840" elapsed="0.002071"/>
+</iter>
+<iter>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-01-19T13:26:27.223159" level="INFO">${val} = USA</msg>
+<var>${val}</var>
+<arg>${itr}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.219961" elapsed="0.003208"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-01-19T13:26:27.223237" level="INFO">USA</msg>
+<arg>${val}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-01-19T13:26:27.223202" elapsed="0.000047"/>
+</kw>
+<var name="${itr}">&lt;selenium.webdriver.remote.webelement.WebElement (session="ce139b288f802ffd8eb34a4d5d57a498", element="f.7B662FDD9FD00198489318C0F196EA95.d.A23D8CBE81F5FA1D944281FA7741EC38.e.60")&gt;</var>
+<status status="PASS" start="2025-01-19T13:26:27.219940" elapsed="0.003321"/>
+</iter>
+<var>${itr}</var>
+<value>@{Data}</value>
+<status status="PASS" start="2025-01-19T13:26:27.163485" elapsed="0.059790"/>
+</for>
+<status status="PASS" start="2025-01-19T13:26:27.143953" elapsed="0.079361"/>
+</kw>
+<status status="PASS" start="2025-01-19T13:26:24.242326" elapsed="2.981072"/>
 </test>
 <doc>To check thrilophilla website is working fine</doc>
-<status status="PASS" start="2025-01-19T08:10:02.628730" elapsed="4.867123"/>
+<status status="PASS" start="2025-01-19T13:26:24.197039" elapsed="3.026570"/>
 </suite>
 <statistics>
 <total>
